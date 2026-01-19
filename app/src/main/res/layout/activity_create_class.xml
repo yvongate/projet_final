@@ -13,88 +13,99 @@
 
         <TextView
             android:id="@+id/textViewTitle"
-            style="@style/ModernText.Heading1"
+            style="@style/ModernText.Heading2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Connexion"
-            android:layout_marginTop="40dp"
+            android:text="Créer une classe"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewRole"
-            style="@style/ModernText.Caption"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enseignant"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputEmail"
+            android:id="@+id/textInputNom"
             style="@style/ModernTextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:layout_marginTop="48dp"
+            android:hint="Nom de la classe *"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewRole">
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/editTextNom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:textSize="16sp"
                 android:padding="16dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputPassword"
+            android:id="@+id/textInputAnnee"
             style="@style/ModernTextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
-            android:layout_marginTop="20dp"
-            app:passwordToggleEnabled="true"
+            android:hint="Année académique *"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputEmail">
+            app:layout_constraintTop_toBottomOf="@+id/textInputNom">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/editTextAnnee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputDescription"
+            style="@style/ModernTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputAnnee">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:gravity="top"
                 android:textSize="16sp"
                 android:padding="16dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/buttonLogin"
+            android:id="@+id/buttonCreate"
             style="@style/ModernButton.Filled"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Se connecter"
-            android:layout_marginTop="40dp"
+            android:text="Créer la classe"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputDescription" />
 
-        <TextView
-            android:id="@+id/textViewRegister"
-            style="@style/ModernText.Body"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/buttonCancel"
+            style="@style/ModernButton.Outlined"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Pas encore de compte ? S'inscrire"
-            android:textColor="@color/text_secondary"
-            android:layout_marginTop="24dp"
+            android:text="Annuler"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

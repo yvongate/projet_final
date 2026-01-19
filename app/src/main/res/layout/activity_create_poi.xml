@@ -13,149 +13,124 @@
 
         <TextView
             android:id="@+id/textViewTitle"
-            style="@style/ModernText.Heading1"
+            style="@style/ModernText.Heading2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Inscription"
+            android:text="Nouveau Point d'Intérêt"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewRole"
-            style="@style/ModernText.Caption"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enseignant"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputNom"
+            android:id="@+id/layoutNom"
             style="@style/ModernTextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Nom"
             android:layout_marginTop="32dp"
+            android:hint="Nom du lieu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewRole">
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextNom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text"
+                android:maxLines="1"
                 android:textSize="16sp"
                 android:padding="16dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputPrenom"
+            android:id="@+id/layoutType"
             style="@style/ModernTextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Prénom"
             android:layout_marginTop="16dp"
+            android:hint="Type de lieu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputNom">
+            app:layout_constraintTop_toBottomOf="@+id/layoutNom">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPrenom"
+                android:id="@+id/editTextType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text"
+                android:maxLines="1"
                 android:textSize="16sp"
                 android:padding="16dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputEmail"
+            android:id="@+id/layoutDescription"
             style="@style/ModernTextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Email"
             android:layout_marginTop="16dp"
+            android:hint="Description (optionnelle)"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputPrenom">
+            app:layout_constraintTop_toBottomOf="@+id/layoutType">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/editTextDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:textSize="16sp"
-                android:padding="16dp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputPassword"
-            style="@style/ModernTextInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Mot de passe"
-            android:layout_marginTop="16dp"
-            app:passwordToggleEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputEmail">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textSize="16sp"
-                android:padding="16dp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputConfirmPassword"
-            style="@style/ModernTextInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Confirmer"
-            android:layout_marginTop="16dp"
-            app:passwordToggleEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputPassword">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:minLines="4"
                 android:textSize="16sp"
                 android:padding="16dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/buttonRegister"
+            android:id="@+id/buttonGetLocation"
+            style="@style/ModernButton.Coral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Obtenir ma position GPS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutDescription" />
+
+        <TextView
+            android:id="@+id/textViewCoordinates"
+            style="@style/ModernText.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Coordonnées GPS: Non définies"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGetLocation" />
+
+        <Button
+            android:id="@+id/buttonCreate"
             style="@style/ModernButton.Filled"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="S'inscrire"
             android:layout_marginTop="32dp"
+            android:text="Créer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputConfirmPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewCoordinates" />
 
-        <TextView
-            android:id="@+id/textViewLogin"
-            style="@style/ModernText.Body"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/buttonCancel"
+            style="@style/ModernButton.Outlined"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Déjà un compte ? Se connecter"
-            android:textColor="@color/text_secondary"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Annuler"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

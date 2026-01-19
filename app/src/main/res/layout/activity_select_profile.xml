@@ -3,71 +3,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="24dp">
+    android:background="@color/background_light"
+    android:padding="32dp">
 
     <TextView
         android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
+        style="@style/ModernText.Heading1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Sélectionnez votre profil"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/yellow_700"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardEnseignant"
+        android:text="Bienvenue"
+        android:layout_marginBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSubtitle" />
+
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        style="@style/ModernText.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sélectionnez votre profil"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@+id/cardEnseignant" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardEnseignant"
+        style="@style/ModernCard"
         android:layout_width="0dp"
-        android:layout_height="180dp"
-        android:layout_marginBottom="24dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
         android:focusable="true"
-        app:cardBackgroundColor="@color/yellow_500"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/primary_coral"
         app:layout_constraintBottom_toTopOf="@+id/cardEtudiant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:src="@android:drawable/ic_menu_edit"
-                android:tint="@color/black" />
+                android:tint="@color/text_on_dark" />
 
             <TextView
+                style="@style/ModernText.Heading2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:text="Enseignant"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="@color/text_on_dark" />
+
+            <TextView
+                style="@style/ModernText.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Gérer mes classes"
+                android:textColor="@color/text_on_dark"
+                android:alpha="0.8" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardEtudiant"
+        style="@style/ModernCard"
         android:layout_width="0dp"
-        android:layout_height="180dp"
+        android:layout_height="200dp"
         android:clickable="true"
         android:focusable="true"
-        app:cardBackgroundColor="@color/orange_500"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/primary_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,23 +92,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:src="@android:drawable/ic_menu_my_calendar"
-                android:tint="@color/black" />
+                android:tint="@color/text_on_dark" />
 
             <TextView
+                style="@style/ModernText.Heading2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:text="Étudiant"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="@color/text_on_dark" />
+
+            <TextView
+                style="@style/ModernText.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Consulter mes cours"
+                android:textColor="@color/text_on_dark"
+                android:alpha="0.8" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

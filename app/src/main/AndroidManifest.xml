@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +42,50 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreateClassActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ClassListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ClassDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EnrollStudentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreateAnnonceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AnnonceListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AnnonceDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreatePOIActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".POIListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MapActivity"
             android:exported="false" />
 
     </application>
