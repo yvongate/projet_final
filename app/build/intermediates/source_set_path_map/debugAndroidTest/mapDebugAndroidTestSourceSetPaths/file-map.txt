@@ -1,0 +1,6 @@
+com.uici.classmanager.test.app-annotation-experimental-1.3.0-0 C:\Users\Yvon\.gradle\caches\8.9\transforms\5461baf8a62de5a8718196f141b87109\transformed\annotation-experimental-1.3.0\res
+com.uici.classmanager.test.app-core-1.5.0-1 C:\Users\Yvon\.gradle\caches\8.9\transforms\82c2ffb86ffb17ac0818a1e05f451609\transformed\core-1.5.0\res
+com.uici.classmanager.test.app-androidTest-2 C:\Users\Yvon\AndroidStudioProjects\projet_final\app\build\generated\res\resValues\androidTest\debug
+com.uici.classmanager.test.app-mergeDebugAndroidTestResources-3 C:\Users\Yvon\AndroidStudioProjects\projet_final\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.uici.classmanager.test.app-mergeDebugAndroidTestResources-4 C:\Users\Yvon\AndroidStudioProjects\projet_final\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.uici.classmanager.test.app-debugAndroidTest-5 C:\Users\Yvon\AndroidStudioProjects\projet_final\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

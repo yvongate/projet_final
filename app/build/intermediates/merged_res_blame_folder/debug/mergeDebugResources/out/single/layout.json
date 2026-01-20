@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_register.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_annonce_list.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_annonce_list.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_splash.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_student_list.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_student_list.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/item_poi.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/item_poi.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_annonce_detail.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_annonce_detail.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/item_class.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/item_class.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_class_detail.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_class_detail.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_map.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_create_annonce.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_create_annonce.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_login.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_enroll_student.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_enroll_student.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/item_annonce.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/item_annonce.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_create_poi.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_create_poi.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_class_list.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_class_list.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_select_profile.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_select_profile.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/item_student.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/item_student.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/item_enroll_student.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/item_enroll_student.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_poi_list.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_poi_list.xml"
+    },
+    {
+        "merged": "com.uici.classmanager.app-mergeDebugResources-34:/layout/activity_create_class.xml",
+        "source": "com.uici.classmanager.app-main-37:/layout/activity_create_class.xml"
+    }
+]

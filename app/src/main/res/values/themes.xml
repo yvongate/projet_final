@@ -69,6 +69,10 @@
     </style>
 
     <!-- Modern Text Styles -->
+    <style name="ModernText">
+        <!-- Base style for all ModernText variants -->
+    </style>
+
     <style name="ModernText.Heading1">
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">@color/text_primary</item>

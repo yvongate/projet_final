@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/textViewNom"
+            style="@style/ModernText.Heading1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nom de la classe"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelAnnee"
+            style="@style/ModernText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Année académique:"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNom" />
+
+        <TextView
+            android:id="@+id/textViewAnnee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2024-2025"
+            android:textColor="@color/primary_coral"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/labelAnnee"
+            app:layout_constraintTop_toTopOf="@+id/labelAnnee"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/labelDescription"
+            style="@style/ModernText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelAnnee" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            style="@style/ModernText.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description de la classe"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelDescription" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStudents"
+            style="@style/ModernCard"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/primary_coral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:tint="@color/text_on_dark" />
+
+                <TextView
+                    style="@style/ModernText.Heading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Étudiants"
+                    android:textColor="@color/text_on_dark" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAnnonces"
+            style="@style/ModernCard"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/primary_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardStudents">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    android:tint="@color/text_on_dark" />
+
+                <TextView
+                    style="@style/ModernText.Heading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Annonces"
+                    android:textColor="@color/text_on_dark" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPOI"
+            style="@style/ModernCard"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/primary_coral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardAnnonces">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_dialog_map"
+                    android:tint="@color/text_on_dark" />
+
+                <TextView
+                    style="@style/ModernText.Heading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Points d'Intérêt"
+                    android:textColor="@color/text_on_dark" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
