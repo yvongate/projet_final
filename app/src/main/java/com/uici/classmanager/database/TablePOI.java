@@ -29,7 +29,7 @@ public class TablePOI {
                 + COLUMN_LONGITUDE + " REAL NOT NULL, "
                 + COLUMN_DESCRIPTION + " TEXT, "
                 + COLUMN_CLASSE_ID + " INTEGER NOT NULL, "
-                + "FOREIGN KEY(" + COLUMN_CLASSE_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COLUMN_ID + ")"
+                + "FOREIGN KEY(" + COLUMN_CLASSE_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COL_ID + ")"
                 + ")";
         db.execSQL(query);
     }

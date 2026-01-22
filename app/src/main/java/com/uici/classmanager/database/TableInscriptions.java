@@ -23,8 +23,8 @@ public class TableInscriptions {
                 + COLUMN_USER_ID + " INTEGER NOT NULL, "
                 + COLUMN_CLASS_ID + " INTEGER NOT NULL, "
                 + COLUMN_DATE_INSCRIPTION + " TEXT, "
-                + "FOREIGN KEY(" + COLUMN_USER_ID + ") REFERENCES " + TableUsers.TABLE_NAME + "(" + TableUsers.COLUMN_ID + "), "
-                + "FOREIGN KEY(" + COLUMN_CLASS_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COLUMN_ID + "), "
+                + "FOREIGN KEY(" + COLUMN_USER_ID + ") REFERENCES " + TableUsers.TABLE_NAME + "(" + TableUsers.COL_ID + "), "
+                + "FOREIGN KEY(" + COLUMN_CLASS_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COL_ID + "), "
                 + "UNIQUE(" + COLUMN_USER_ID + ", " + COLUMN_CLASS_ID + ")"
                 + ")";
         db.execSQL(query);

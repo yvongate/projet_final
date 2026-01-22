@@ -29,7 +29,7 @@ public class TableAnnonces {
                 + COLUMN_CLASSE_ID + " INTEGER NOT NULL, "
                 + COLUMN_TYPE_RESSOURCE + " TEXT, "
                 + COLUMN_CHEMIN_RESSOURCE + " TEXT, "
-                + "FOREIGN KEY(" + COLUMN_CLASSE_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COLUMN_ID + ")"
+                + "FOREIGN KEY(" + COLUMN_CLASSE_ID + ") REFERENCES " + TableClasses.TABLE_NAME + "(" + TableClasses.COL_ID + ")"
                 + ")";
         db.execSQL(query);
     }
